@@ -9,7 +9,7 @@ void main() {
   print("\nDISPLAY ALL CONTACTS\n");
   phonebook.displayContacts();
 
-  // get data from the user input
+  // get data from the user input and add to list
   phonebook.add_new();
 
   // display data along with the newly inputted data
