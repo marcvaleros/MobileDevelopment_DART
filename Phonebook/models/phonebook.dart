@@ -35,7 +35,6 @@ class Phonebook {
   }
 
   Contact? findContact(String number) {
-    
     Contact? result =
         _pbook.firstWhere((element) => element.phoneNumber == number);
     return result;
@@ -44,12 +43,13 @@ class Phonebook {
   searchByNumber(String number) {
     Contact? contact = findContact(number);
 
-    if (contact == null) {
-      print("Record Not Found\n");
-    } else {
+    if (contact != null) {
+      print("\n============== SEARCH RESULT ==============");
       print("Fullname: ${contact.fname} ${contact.lname}");
       print("Phone Number: ${contact.phoneNumber}");
       print("Address: ${contact.address}");
+    } else {
+      print("Record Not Found\n");
     }
   }
 

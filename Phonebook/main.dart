@@ -10,7 +10,7 @@ void main() {
   phonebook.displayContacts();
 
   // get data from the user input
-  // phonebook.add_new();
+  phonebook.add_new();
 
   // display data along with the newly inputted data
   print("\nAFTER ADDING NEW CONTACT\n");
@@ -22,5 +22,5 @@ void main() {
   phonebook.displayContacts();
 
   //look for a specific contact using the number
-  phonebook.searchByNumber("09993865418");
+  phonebook.searchByNumber("09993866518");
 }
